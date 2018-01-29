@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/framelayout"
+    android:layout_width="550dp"
+    android:layout_height="match_parent"
+    android:foregroundGravity="fill"><!--foreground color for a FrameLayout-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="550dp"
+            android:layout_height="250dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/test" />
+
+        <ImageView
+            android:id="@+id/image_truck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/logo_truck"
+            android:visibility="visible" />
+
+        <!--Textview will not be shown because of foreground color is drawn over it-->
+
+    </RelativeLayout>
+
+</FrameLayout>
